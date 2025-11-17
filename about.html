@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Section</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('AboutBG.jpg') center/cover no-repeat;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.65);
+            min-height: 100vh;
+            width: 100%;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .overlay h1 {
+            color: #fff;
+            font-size: 55px;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        .overlay p {
+            color: #ddd;
+            font-size: 16px;
+            margin-bottom: 60px;
+        }
+
+        /* Service boxes container */
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            flex-wrap: wrap;
+        }
+
+        /* Individual service card */
+        .service-card {
+            text-align: center;
+            width: 260px;
+            color: #fff;
+        }
+
+        /* Red round icon */
+        .icon-box {
+            background: #e4002b;
+            width: 80px;
+            height: 80px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+        }
+
+        /* Service title */
+        .service-card h3 {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .service-card .sub-link {
+            margin-top: 10px;
+            display: inline-block;
+            color: #ddd;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .service-card .sub-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="overlay">
+        
+        <h1>BRINGING HAPPINESS TO YOU</h1>
+        <p>Savor your favorite meals the way you like—delivered, picked up, or enjoyed in our cozy dining space.</p>
+
+        <div class="services">
+
+            <!-- Online Delivery -->
+            <div class="service-card">
+                <div class="icon-box">📱</div>
+                <h3>ONLINE DELIVERY</h3>
+                <a href="#" class="sub-link">ORDER ONLINE →</a>
+            </div>
+
+            <!-- Click & Collect -->
+            <div class="service-card">
+                <div class="icon-box">📦</div>
+                <h3>CLICK & COLLECT</h3>
+                <a href="#" class="sub-link">TAKEOUT ORDER →</a>
+            </div>
+
+            <!-- Restaurant Dining -->
+            <div class="service-card">
+                <div class="icon-box">🍕</div>
+                <h3>RESTAURANT DINING</h3>
+                <a href="#" class="sub-link">BOOK A TABLE →</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

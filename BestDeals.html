@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Best Deals Section</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial, Helvetica, sans-serif;
+        background:#f7f5f0;
+    }
+
+    .best-deals{
+        padding:60px 80px;
+    }
+    .section-title{
+        font-size:42px;
+        font-weight:800;
+        margin-bottom:20px;
+    }
+    .view-all-btn{
+        float:right;
+        padding:10px 24px;
+        border:2px solid #d3293d;
+        color:#d3293d;
+        border-radius:5px;
+        text-decoration:none;
+        font-weight:600;
+        margin-top:-60px;
+    }
+
+    /* Deals Layout */
+    .deals-container{
+        margin-top:60px;
+    }
+    .deal-card{
+        position:relative;
+        border-radius:20px;
+        overflow:hidden;
+    }
+
+    /* BIG CARD */
+    .big-card{
+        display:flex;
+        height:260px;
+        margin-bottom:40px;
+        position:relative;
+    }
+    .big-card img{
+        width:45%;
+        height:100%;
+        object-fit:cover;
+        position:absolute;
+        left:0;
+        top:0;
+        z-index:1;
+    }
+    .big-card .deal-content{
+        position:absolute;
+        right:0;
+        top:0;
+        width:55%;
+        height:100%;
+        padding:30px;
+        color:white;
+        background:#d3293d;
+        z-index:2;
+    }
+    .tag{
+        background:#e6002e;
+        padding:10px 16px;
+        border-radius:50px;
+        font-weight:bold;
+        position:absolute;
+        top:20px;
+        left:20px;
+        font-size:14px;
+        z-index:3;
+    }
+    .deal-badge{
+        color:#ffd700;
+        font-size:14px;
+        font-weight:bold;
+    }
+    .big-card h3{
+        font-size:30px;
+        margin:10px 0;
+        font-weight:800;
+    }
+    .big-card p{
+        font-size:15px;
+        width:80%;
+        opacity:0.9;
+    }
+    .price{
+        font-size:32px;
+        font-weight:800;
+        display:block;
+        margin-top:10px;
+    }
+
+    /* SMALL CARDS FIXED (Images visible) */
+    .small-deals{
+        display:flex;
+        gap:30px;
+    }
+    .small-card{
+        width:50%;
+        height:200px;
+        position:relative;
+        border-radius:20px;
+        overflow:hidden;
+    }
+
+    .deal-card img{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        z-index:1;
+    }
+
+    .overlay,
+    .overlay-right{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        padding:30px;
+        color:white;
+        z-index:2;
+    }
+
+    .overlay{
+        background: linear-gradient(150deg, #d3293d 60%, #ffd000);
+    }
+
+    .overlay-right{
+        background: linear-gradient(-150deg, #d3293d 65%, #ffd000);
+    }
+
+    .circle-tag{
+        background:#ffd000;
+        color:black;
+        font-weight:800;
+        border-radius:50px;
+        padding:8px 14px;
+        position:absolute;
+        top:15px;
+        left:15px;
+        z-index:3;
+    }
+
+    .deal-title{
+        font-size:22px;
+        font-weight:800;
+        margin-top:75px;
+        display:block;
+    }
+    .starting-text{
+        font-size:12px;
+        opacity:0.9;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- ===================== BEST DEALS SECTION ===================== -->
+<section class="best-deals">
+
+    <h2 class="section-title">BEST DEALS!</h2>
+    <a href="#" class="view-all-btn">VIEW ALL</a>
+
+    <div class="deals-container">
+
+        <!-- BIG MEAT MONSTA -->
+        <div class="deal-card big-card">
+            <img src="pizza.jpg" alt="Big Meat Monsta">
+
+            <span class="tag">SAVE 35%</span>
+
+            <div class="deal-content">
+                <span class="deal-badge">DAILY DEAL!</span>
+                <h3>BIG MEAT MONSTA</h3>
+                <p>Nunc tellus pellentesque ut est fames vitae dui posuere.</p>
+                <span class="price">$18</span>
+            </div>
+        </div>
+
+        <!-- BOTTOM ROW -->
+        <div class="small-deals">
+
+            <!-- COMBO DOUBLE BOX -->
+            <div class="deal-card small-card">
+                <img src="pizza2.jpg" alt="Combo Double Box">
+                <div class="overlay">
+                    <span class="deal-badge">COMBO DOUBLE BOX</span>
+                    <span class="price">$24</span>
+                </div>
+            </div>
+
+            <!-- ITALIAN STALLION -->
+            <div class="deal-card small-card">
+                <img src="pizza3.jpg" alt="Italian Stallion">
+                <div class="overlay-right">
+                    <span class="circle-tag">SAVE 30%</span>
+                    <span class="deal-title">ITALIAN STALLION</span>
+                    <span class="starting-text">STARTING AT</span>
+                    <span class="price">$16</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =============================================================== -->
+
+</body>
+</html>

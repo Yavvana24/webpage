@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pizzeria Locations</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #faf8f4;
+        color: #1d1d1d;
+    }
+
+    .location-section {
+        text-align: center;
+        padding: 70px 20px 30px;
+    }
+
+    .location-section h5 {
+        color: #c92137;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .location-section h1 {
+        font-size: 48px;
+        font-weight: 800;
+        margin: 10px 0;
+        letter-spacing: 1px;
+    }
+
+    .location-section p {
+        font-size: 16px;
+        color: #555;
+        max-width: 700px;
+        margin: auto;
+        line-height: 1.6;
+    }
+
+    .location-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 10px 70px;
+    }
+
+    .box {
+        width: 250px;
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+        transition: 0.3s ease-in-out;
+    }
+
+    .box:hover {
+        transform: translateY(-7px);
+        box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.18);
+    }
+
+    .box h3 {
+        margin: 0 0 10px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .box p {
+        font-size: 15px;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    .box .phone {
+        margin-top: 10px;
+        display: block;
+        font-weight: 600;
+        color: #1c1c1c;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+        .location-section h1 {
+            font-size: 36px;
+        }
+        .box { width: 85%; }
+    }
+</style>
+</head>
+<body>
+
+<!------------------- TITLE SECTION --------------------->
+<section class="location-section">
+    <h5>OUR LOCATION</h5>
+    <h1>FIND THE PIZZA SHOP NEAR YOU</h1>
+    <p>
+        Discover your nearest branch and enjoy freshly baked pizzas made with authentic ingredients, friendly service, and a warm dining atmosphere.
+    </p>
+</section>
+
+<!------------------- LOCATION BOXES --------------------->
+<div class="location-container">
+    <div class="box">
+        <h3>Bengaluru</h3>
+        <p>123 Beside Thopstech, Marathalli, Bengaluru, India</p>
+        <span class="phone">+91 78 696 88997</span>
+    </div>
+
+    <div class="box">
+        <h3>Hyderabad</h3>
+        <p>45 Baker Street, Ameerpet, Hyderabad, India</p>
+        <span class="phone">+91 77 794 60000</span>
+    </div>
+
+    <div class="box">
+        <h3>Chennai</h3>
+        <p>Beside Chepauk Stadium, Chepauk, Chennai, India</p>
+        <span class="phone">+91 99 2348 5678</span>
+    </div>
+
+    <div class="box">
+        <h3>Vizag</h3>
+        <p>789 Aca Stadium Road, Vizag, India</p>
+        <span class="phone">+91 99 8768 5432</span>
+    </div>
+</div>
+
+</body>
+</html>

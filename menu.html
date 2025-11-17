@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Section</title>
+
+<style>
+    .food-section {
+        text-align: center;
+        padding: 80px 20px;
+        background: #faf8f6;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .section-tag {
+        color: #c43131;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 48px;
+        color: #222;
+        margin: 20px 0;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+
+    .section-desc {
+        max-width: 650px;
+        margin: 0 auto 30px;
+        font-size: 16px;
+        color: #555;
+    }
+
+    .menu-btn {
+        border: 2px solid #c43131;
+        background: transparent;
+        color: #c43131;
+        padding: 12px 35px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .menu-btn:hover {
+        background: #c43131;
+        color: #fff;
+    }
+
+    .food-categories {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        margin-top: 60px;
+        flex-wrap: wrap;
+    }
+
+    .food-item img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 20%;
+    }
+
+    .food-item h3 {
+        margin-top: 15px;
+        font-size: 22px;
+        color: #c43131;
+        font-weight: 700;
+    }
+</style>
+</head>
+<body>
+
+<section class="food-section">
+
+    <p class="section-tag">CHOOSE YOUR FLAVOR</p>
+
+    <h1 class="section-title">FOOD THAT BRINGS PEOPLE<br>TOGETHER!</h1>
+
+    <p class="section-desc">
+        Savor your favorite meals the way you like—delivered, picked up, or enjoyed in our cozy dining space.
+    </p>
+
+    <button class="menu-btn">VIEW ALL MENU</button>
+
+    <div class="food-categories">
+
+        <div class="food-item">
+            <img src="pasta.jpg" alt="Pasta">
+            <h3>PASTA</h3>
+        </div>
+
+        <div class="food-item">
+            <img src="pizza.jpg" alt="Pizza">
+            <h3>PIZZA</h3>
+        </div>
+
+        <div class="food-item">
+            <img src="dessert.jpg" alt="Dessert">
+            <h3>DESSERT</h3>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
